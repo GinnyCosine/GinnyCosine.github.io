@@ -4,17 +4,25 @@ $(document).ready(function(){
     var cur_scrollTop =  $(window).scrollTop();
     console.log(pn);
 
+    $(window).load(function(){
+        setTimeout(function (){$('.load').fadeOut(900)},800);
+    });
+
     $(window).scroll(function(){
-        var tmp_scrollTop = $(window).scrollTop();
-        if (tmp_scrollTop - cur_scrollTop >= 0){
-            $(".menubtn").fadeOut();
-            $(".menu_mobile").fadeOut();
+        var vw = $(window).width();
+        if (vw <= 768){
+            var tmp_scrollTop = $(window).scrollTop();
+            if (tmp_scrollTop - cur_scrollTop >= 0){
+                $(".menubtn").fadeOut();
+                $(".menu_mobile").fadeOut();
+            }
+            else{
+                $(".menubtn").fadeIn();
+                $(".menu_mobile").fadeIn();
+            }
+            cur_scrollTop = tmp_scrollTop;
         }
-        else{
-            $(".menubtn").fadeIn();
-            $(".menu_mobile").fadeIn();
-        }
-        cur_scrollTop = tmp_scrollTop;
+        
     });
 
     var vw = $(window).width();
