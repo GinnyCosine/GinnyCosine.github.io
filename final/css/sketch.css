@@ -89,7 +89,7 @@ footer{
 }
 
 #t2{
-    background: #c3e2dd;
+    background: #d5f1ed;
     z-index: 10;
 }
 
@@ -127,7 +127,7 @@ footer{
     height: 80vh;
     position: absolute;
     top: 100vh;
-    background: #c3e2dd;
+    background: #d5f1ed;
 }
 
 .topic .imgbox{
@@ -240,6 +240,10 @@ i{
         margin: auto;
         text-align: center;
     }
+
+    .pro2{
+        font-size: 45px;
+    }
     
     .topic{
         position: relative;
@@ -247,11 +251,19 @@ i{
         margin: auto;
         width: 100%;
         height: auto;
+        font-size: 40px;
     }
 
     .topic header{
         height: 100px;
         line-height:  100px;
+        color:  #337780;
+        text-shadow: 2px 1px 0px #62c3cf;
+    }
+
+    .topic:nth-child(2n) header{
+        color: rgb(110, 91, 39);
+        text-shadow: 02px 0.5px 0px rgb(255, 215, 106);
     }
     
     .circle{
@@ -281,7 +293,7 @@ i{
         top: auto;
         height: 10vh;
         line-height: 10vh;
-        background: #c3e2dd;
+        background: #d5f1ed;
     }
 
 }
