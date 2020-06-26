@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Caveat|Noto+Serif+TC&display=swap&subset=chinese-traditional');
+
+body{
+    font-family: 'Baloo 2', cursive;
+    background-color: seashell;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    background: rgba(112,112,112,0.8);
+    z-index: 100000;
+}
+
+nav{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    display: inline-block;
+    padding: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: #ccc;
+}
+
+section{
+    position: relative;
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+    margin: 100px auto 0px;
+}
+
+.left, .right{
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.right{
+    width: 100%;
+}
+
+.left{
+    width: 50%;
+    left: 50px;
+    top: 150px;
+    background: rgba(253, 116, 104, 0.8);
+    padding: 30px;
+    z-index: 20;
+    color: rgba(255,255,255,1);
+}
+
+.left p, .left h1{
+    padding: 0;
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.left h1{
+    font-size: 52px;
+    padding-bottom: 20px;
+    font-family: 'Caveat', cursive;
+}
+
+article{
+    width: 80%;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.card{
+    float: left;
+    box-sizing: border-box;
+    width: 33.33%;
+    min-width: 300px;   /* 因為大小會隨著視窗的33.33%調，所以可以設一個最小值避免過小*/
+    background: rgba(253, 116, 104, 1);
+    text-align: center;
+    border: solid 5px #e5e5e5;
+    padding: 5px 0px;
+    color: #fff;
+}
+
+.card:hover{
+    cursor: pointer;    /* 讓滑鼠變成手指標示 */
+    color: rgba(255,255,255,0.5);
+    background: rgba(114,8,150,1);
+    transition: background 1s, color 1s;            
+    -webkit-transition: background 1s, color 1s;    /* For Safari 3.1 to 6.0 */
+}
+
+/* aside */
+
+aside{
+    clear: both;
+    width: 80%; /* 大小會隨著版面自動調整 */
+    margin: auto;   /* 置中 */
+}
+
+.wraptext{
+    float: left;    
+    width: 100%;    /* 螢幕的80% */
+    box-sizing: border-box; /* 不影響總寬度 */
+    padding: 20px;
+    background: #fff;
+    border: solid 2px #e5e5e5;
+    color: rgba(253, 116, 104, 1);
+}
+
+.wraptext p{
+    padding: 0;
+    margin: 0;  /* 回到預設的樣式 */
+    line-height: 1.5em; /* 用 em 的話會按照字的大小去自行調整寬度*/
+}
+
+.wraptext img{
+    float: left;    /* 置左 */
+    padding-right: 20px;
+}
+
+footer{
+    clear: both;
+    padding: 20px 0px;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.copy{
+    color: #F60;
+}

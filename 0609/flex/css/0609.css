@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body{
+	padding:0;
+	margin:0;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+/* main */
+main{
+	display: flex;
+	display: -webkit-flex;
+	/* align-items: baseline; */ 
+	flex-wrap: wrap;	/* 滿了換行 */
+	width: 100%;
+}
+
+/*header*/
+header{
+	width:100%;
+	background:#C0C0B0;
+	text-align:center;
+	padding: 20px;
+}
+
+/*nav*/
+nav{
+	width:100%;
+	background:#468263;
+	text-align:center;
+}
+
+nav ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+nav ul li a{
+	display: block;
+	padding:10px 30px;
+	border-bottom:solid 1px #fff;
+	font-weight:bold;
+	text-decoration:none;
+	color:#fff;
+}
+
+nav ul li a:hover{
+	background:#fff;
+	color:#468263;
+}
+
+/*aside*/
+aside{
+	width:100%;
+	background:#C0C0B0;
+	text-align:center;
+}
+
+aside img{
+	width:100%;	
+}
+
+/*section*/
+section{
+	width:100%;
+	color:#fff;
+	background:#731509;
+	line-height:2em;
+}
+
+section p{
+	box-sizing:border-box;
+	padding: 20px;
+}
+
+/*footer*/
+footer{
+	width:100%;
+	text-align:center;
+	padding: 20px;
+}
+
+/* for pad */
+@media only screen and (min-width: 768px){
+	nav{
+		padding: 10px;
+	}
+
+	nav ul li{
+		display: inline;
+	}
+
+	nav ul li a{
+		display: inline;
+		border-bottom: solid 0px #fff;
+	}
+
+	aside{
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+
+	section{
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+}
+
+/* for PC */
+@media only screen and (min-width: 1200px){
+	nav{
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+
+	nav ul{
+		padding: 20px;
+	}
+
+	nav ul li a{
+		display: block;
+		border-bottom: solid 1px #fff;
+	}
+
+	aside{
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+
+	section{
+		-webkit-flex: 2;
+		-ms-flex: 2;
+		flex: 2;
+	}
+}

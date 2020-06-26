@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+	margin:0;
+	padding:0;
+	background:#fff7eb;
+}
+
+/* nav bar */
+nav{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	background:rgb(243, 207, 4);
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;
+	z-index:2000;
+}
+
+nav ul{
+	margin: 0; 
+	padding: 0;
+}
+
+nav li{
+	display: inline-block;
+}
+
+nav li a{
+	display: inline-block;
+	padding:10px;
+	color: #fff;
+	text-decoration: none;  /*將底線去除*/
+}
+
+nav li a:hover{
+	background:rgb(187, 137, 0);
+	color: rgb(54, 31, 16);
+}
+
+.ch_bg{
+	background:rgb(187, 137, 0);
+	color: rgb(54, 31, 16);
+}
+
+/* section */
+section{
+	width:80%;
+	margin: auto;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
+}
+
+.box{
+	display: inline-block;
+	box-sizing:border-box;
+	width:100%;
+	background:#fff;
+	margin:12pt 0px 0pt;
+	overflow:hidden;
+	background:#fff;
+	z-index:10;
+	box-shadow: 2px 2px 8px #999;
+}
+
+.imgbox{
+	width:100%;
+	overflow:hidden;
+}
+
+.box img{
+	width:100%;
+}
+
+.box:hover{
+	cursor: pointer;
+}
+
+.box .imgbox img{	
+	-ms-transform: scale(1.2,1.2); /* IE 9 */
+    -webkit-transform: scale(1.2,1.2); /* Safari */
+    transform: scale(1.2,1.2); /* Standard syntax */
+	
+	transition: transform 1.5s;
+	-webkit-transition: transform 1.5s;
+	
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;/* Safari */
+}
+
+.box:hover .imgbox img{
+	-ms-transform: scale(1,1); /* IE 9 */
+    -webkit-transform: scale(1,1); /* Safari */
+    transform: scale(1,1); /* Standard syntax */
+}
+
+.box h3{
+	box-sizing:border-box;
+	padding:0px 20px;
+	color:#399;
+}
+
+.box p{
+	box-sizing:border-box;
+	padding:0px 20px;
+	color:#666;
+}
+
+.head{
+	display:inline-block;
+	padding:0px 20px 20px;
+}
+
+.head img{
+	float:left;
+	width:40px;
+	height:40px;
+	border-radius: 50%;
+}
+
+.head span{
+	float:left;
+	font-size:13px;
+	color:#999;
+	line-height:40px;
+}
+
+/*footer*/
+
+footer{
+	padding:20px 0px;
+	text-align:center;	
+}
+
+footer i{
+	font-size: 30px;
+	color: rgb(255, 187, 0);
+}

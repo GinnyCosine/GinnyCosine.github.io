@@ -1,0 +1,58 @@
+@import url('subsubpage.css');
+
+header{
+    text-shadow: 2px 2px 0px #F27F1B;
+}
+
+.title{
+    background: #BFB49F;
+}
+
+.pic{
+    position: fixed;
+    top: 10%;
+}
+
+.description{
+    position: absolute;
+}
+
+.description span{
+    text-shadow: 1px 0.5px 0px #F25C05;
+}
+
+header .label{
+    font-size: 35px;
+    font-family: 'Nanum Pen Script', cursive;
+    text-shadow: none;
+    padding: 0 6px;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .pic{
+        left: 12%;
+    }
+    
+    .description{
+        position: absolute;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 768px){
+    .pic{
+        position: relative;
+        display: block;
+        left: auto;
+        margin: auto;
+        width: 80%;
+    }
+    .description{
+        position: relative;
+        display: block;
+        right: auto;
+        height: auto;
+        margin: auto;
+        width: 80%;
+    }
+}

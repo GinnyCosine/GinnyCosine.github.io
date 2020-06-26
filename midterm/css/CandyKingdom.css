@@ -1,0 +1,1159 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
+@import url("navigation.css");
+@import url("menu.css");
+
+@font-face {
+    font-family: 'JF';
+    src: url('./jf-openhuninn-1.0.woff') format("woff");
+}
+   
+body{
+    font-family: 'Baloo Bhaina 2', cursive;
+    
+    overflow: hidden;
+    font-family: 'JF';
+    margin: 0;
+}
+
+.page{
+    position: relative;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    min-width: 1000px;
+    background: url(../images/g2.png) rgb(255, 252, 239);
+    background-size: contain;
+}
+
+#page1{
+    background: url(../images/c_2.png) no-repeat;
+    background-size: cover;
+}
+
+.hello{
+    position: absolute;
+    bottom: -30%;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+
+    animation-name: ant;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 0.5s;	/* 怕網速太慢，圖片還沒load完動畫就開始放 */
+	animation-direction: normal;	/* 左到右，reverse是右到左 */
+	animation-fill-mode: forwards;	/* 停在最右邊的格子，因為是normal，所以是最後一格 */
+	/* 一樣的效果
+	animation-direction: reverse;	
+	animation-fill-mode: backwards;	
+	*/
+
+	-webkit-animation-name: ant;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+@keyframes ant{
+	from{
+		bottom: -30%;
+		opacity: 0;
+	}
+	
+	to{
+		bottom: 40%;
+		opacity: 1;
+	}
+	/* 也可以用 % 來表示 */
+}
+
+.dec0{
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 15px;
+    background: rgba(247, 200, 218,0.8);
+    height: 15px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.dec1{
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 30px;
+    background: rgba(247, 200, 218,0.8);
+    height: 30px;
+    border-radius: 50%;
+}
+
+.dec2{
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background: rgba(247, 200, 218,0.8);
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.sep{
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.sep2{
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 18px;
+    border-radius: 50%;
+}
+
+#page2{
+    /*background: url(../images/g.png) rgb(255, 252, 239);*/
+    background-size: contain;
+}
+
+.welcome{
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    background: rgba(247, 200, 218,0.8);
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Baloo 2', cursive;
+}
+
+
+.figure{
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    height: 400px;
+    padding: 0;
+    width: 27%;
+    border-radius: 30px;
+}
+
+#f1{
+    left: 5%;
+    top: 15%;
+}
+
+#f2{
+    left: 50%;
+    top: 22%;
+    -ms-transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+#f3{
+    right: 5%;
+    top: 5%;
+}
+
+.bar{
+    position: absolute;
+    width: 20px;
+}
+
+#b1{
+    background:  rgb(255, 105, 210);
+    top:0;
+    left: 6.7%;
+    height: 17%;
+    -ms-transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+#b2{
+    background:  rgb(91, 140, 219);
+    top:0;
+    left: 37%;
+    height: 26%;
+    -ms-transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+
+#b3{
+    background:  rgb(211, 231, 124);
+    top:0;
+    right: 32%;
+    height: 9%;
+    -ms-transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+
+.head{
+    position: relative;
+    width: 40vh;
+    margin: auto;
+    height: 40vh;
+    border-radius: 50%;
+}
+
+
+#h1{
+    background: url(../images/pb_head.png) rgb(250, 203, 242) no-repeat;
+    background-size: cover;
+    background-position: 0 20px;
+    border: solid rgb(255, 105, 210) 20px;
+}
+
+#h1:hover{
+    border: solid rgb(255, 105, 210) 30px;
+    transition: top 0.5s, border 0.5s;
+    cursor: pointer;
+}
+
+#h2{
+    background: url(../images/pb.png) rgb(156, 194, 255) no-repeat;
+    background-size: 80%;
+    background-position: 20px 10px;
+    border: solid rgb(91, 140, 219) 20px;
+}
+
+#h2:hover{
+    border: solid rgb(91, 140, 219) 30px;
+    transition: top 0.5s, border 0.5s;
+    cursor: pointer;
+}
+
+#h3{
+    background: url(../images/Earl.png) rgb(235, 255, 146) no-repeat;
+    background-position: 20 -10px;
+    background-size: cover;
+    border: solid rgb(211, 231, 124) 20px;
+}
+
+#h3:hover{
+    border: solid rgb(211, 231, 124) 30px;
+    transition: top 0.5s, border 0.5s;
+    cursor: pointer;
+}
+
+
+.summary{
+    position: relative;
+    margin: auto;
+    width: 200px;
+    background: #e2e0cb;
+    text-align: left;
+    border-radius: 25px;
+    border: solid rgb(94, 89, 80) 1.7px;
+}
+
+.space{
+    height: 5px;
+}
+
+.name{
+    margin: auto;
+    position: relative;
+    padding: 3px 0;
+    font-size: 27px;
+    width: 200px;
+    background: white;
+    border-radius: 5px;
+}
+
+#n1{
+    background:  rgb(250, 203, 242);
+}
+
+#n2{
+    background:  rgb(124, 183, 251);
+}
+
+#n3{
+    background:  rgb(235, 255, 146);
+}
+
+.intro{
+    font-size: 18px;
+    margin: auto;
+    padding: 10px;
+}
+
+.label{
+    background: #b3b1a1;
+    font-size: 19px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.left{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 27%;
+}
+
+.right{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 73%;
+}
+
+.left_fig{
+    height: 450px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 450px;
+}
+
+#l1{
+    background:  rgb(255, 105, 210);
+}
+
+#l2{
+    background:  rgb(91, 140, 219);
+    
+}
+
+#l3{
+    background:  rgb(211, 231, 124);
+}
+
+#l1 img{
+    height: 450px;
+}
+
+#l2 img{
+    width: 200px;
+}
+
+#l3 img{
+    height: 450px;
+}
+
+.left img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.l_name{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+
+#l1 .l_name{
+    background:  rgba(250, 203, 242 ,0.8);
+}
+
+#l2 .l_name{
+    background:  rgba(124, 183, 251,0.8);
+    
+}
+
+#l3 .l_name{
+    background:  rgba(235, 255, 146,0.8);
+}
+
+
+.close{
+    position: absolute;
+    top: 80%;
+    right: 4%;
+    color: rgb(250, 247, 234);
+    background: rgb(94, 89, 80);
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 3px 5px;
+    z-index: 100;
+    display: none;
+}
+
+.close:hover{
+    background: rgb(255, 252, 239);
+    color: rgb(58, 33, 1);
+    cursor: pointer;
+}
+
+/* right */
+.right header{
+    color: rgb(94, 89, 80);
+    height: 100%;
+    width: 0;
+}
+
+
+
+#r1 header{
+    background: rgb(250, 203, 242);
+}
+
+#r2 header{
+    background: rgb(124, 183, 251);
+}
+
+#r3 header{
+    background: rgb(235, 255, 146);
+}
+
+.picture{
+    position: absolute;
+    width: 83.33vh;
+    max-width: 60%;
+    height: 50vh;
+    top: 50%;
+    left: 2%;
+    border-radius: 30px;
+    border: solid black;
+    -ms-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.detail{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    padding: 5px;
+    display: none;
+    text-align: left;
+    border-radius: 20px;
+    background: rgb(255, 252, 239);
+    height: 50vh;
+    width: 30%;
+    font-size: 20px;
+    -ms-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.detail p{
+    position: absolute;
+    width: 95%;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.desp1{
+    position: absolute;
+    left: 5%;
+    top: 16%;
+    width: 34.5vh;
+    height: 34.5vh;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.desp1:hover{
+    cursor: pointer;
+}
+
+.desp1 .inside{
+    position: absolute;
+    width: 36.5vh;
+    height: 50px;
+    line-height: 50px;
+    top: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    -ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.desp2{
+    position: absolute;
+    left: 50%;
+    top:72%;
+    width: 44vh;
+    height: 44vh;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    -ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.desp2:hover{
+    cursor: pointer;
+}
+
+.desp2 .inside{
+    position: absolute;
+    width: 46vh;
+    height: 50px;
+    line-height: 50px;
+    top: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    -ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.desp3{
+    position: absolute;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    right: 5%;
+    top: 8%;
+    text-align: center;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.desp3:hover{
+    cursor: pointer;
+}
+
+.desp3 .inside{
+    position: absolute;
+    width: 42vh;
+    height: 50px;
+    line-height: 50px;
+    top: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    -ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Princess Bubblegum */
+#pic1_1{
+    background: url(../images/pm1.png) no-repeat;
+    background-size: cover;
+    display: none;
+
+    animation-name: pb1;
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-delay: 1s;	/* 怕網速太慢，圖片還沒load完動畫就開始放 */
+	animation-direction: normal;	/* 左到右，reverse是右到左 */
+	animation-fill-mode: forwards;	/* 停在最右邊的格子，因為是normal，所以是最後一格 */
+	/* 一樣的效果
+	animation-direction: reverse;	
+	animation-fill-mode: backwards;	
+	*/
+
+	-webkit-animation-name: pb1;
+	-webkit-animation-duration: 9s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+@keyframes pb1{
+	0%{
+		background: url(../images/pm1.png) no-repeat;
+        background-size: cover;
+	}
+	
+	33.33%{
+        background: url(../images/pm2.png) no-repeat;
+        background-size: cover;
+    }
+    
+    66.66%{
+        background: url(../images/pm3.png) no-repeat;
+        background-size: cover;
+    }
+    
+    100%{
+        background: url(../images/pm1.png) no-repeat;
+        background-size: cover;
+    }
+}
+
+#pic1_2{
+    background: url(../images/bc1.png) no-repeat;
+    background-size: cover;
+
+    display: none;
+
+    animation-name: pb2;
+	animation-duration: 14s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-delay: 1s;	/* 怕網速太慢，圖片還沒load完動畫就開始放 */
+	animation-direction: normal;	/* 左到右，reverse是右到左 */
+	animation-fill-mode: forwards;	/* 停在最右邊的格子，因為是normal，所以是最後一格 */
+	/* 一樣的效果
+	animation-direction: reverse;	
+	animation-fill-mode: backwards;	
+	*/
+
+	-webkit-animation-name: pb2;
+	-webkit-animation-duration: 14s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+@keyframes pb2{
+	0%{
+		background: url(../images/bc1.png) no-repeat;
+        background-size: cover;
+	}
+	
+	25%{
+        background: url(../images/bc2.png) no-repeat;
+        background-size: cover;
+    }
+    
+    50%{
+        background: url(../images/bc3.png) no-repeat;
+        background-size: cover;
+    }
+
+    75%{
+        background: url(../images/bc4.png) no-repeat;
+        background-size: cover;
+    }
+
+    100%{
+        background: url(../images/bc1.png) no-repeat;
+        background-size: cover;
+    }
+}
+
+#pic1_3{
+    background: url(../images/el1.png) no-repeat;
+    background-size: cover;
+
+    display: none;
+
+    animation-name: pb3;
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-delay: 1s;	/* 怕網速太慢，圖片還沒load完動畫就開始放 */
+	animation-direction: normal;	/* 左到右，reverse是右到左 */
+	animation-fill-mode: forwards;	/* 停在最右邊的格子，因為是normal，所以是最後一格 */
+	/* 一樣的效果
+	animation-direction: reverse;	
+	animation-fill-mode: backwards;	
+	*/
+
+	-webkit-animation-name: pb3;
+	-webkit-animation-duration: 9s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+@keyframes pb3{
+	0%{
+		background: url(../images/el1.png) no-repeat;
+        background-size: cover;
+	}
+	
+	33.33%{
+        background: url(../images/el2.png) no-repeat;
+        background-size: cover;
+    }
+    
+    66.66%{
+        background: url(../images/el3.png) no-repeat;
+        background-size: cover;
+    }
+
+    100%{
+        background: url(../images/el1.png) no-repeat;
+        background-size: cover;
+    }
+}
+
+#p1_1{
+    background: url(../images/pm2.png);
+    background-size: cover;
+    background-position: 40% 0;
+    border: solid rgb(255, 105, 210) 20px;
+}
+
+#p1_1:hover{
+    top: 23%;
+    transition: top 0.5s;
+}
+
+#p1_1 span{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3px 55px;
+}
+
+#p1_2{
+    background: url(../images/bc1.png);
+    background-size: cover;
+    background-position: 35% 0;
+    border: solid rgb(255, 105, 210) 20px;
+}
+
+#p1_2:hover{
+    top: 68%;
+    transition: top 0.5s;
+}
+
+#p1_2 span{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3px 15px;
+}
+
+#p1_3{
+    background: url(../images/el3.png);
+    background-size: cover;
+    background-position: 40% 0;
+    border: solid rgb(255, 105, 210) 20px;
+}
+
+#p1_3:hover{
+    top: 15%;
+    transition: top 0.5s;
+}
+
+#p1_3 span{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3px 50px;
+}
+
+
+/* Pep But */
+#pic2_1{
+    background: url(../images/id1.png) no-repeat;
+    background-size: cover;
+    display: none;
+
+    animation-name: pep1;
+	animation-duration: 17s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-delay: 1s;	/* 怕網速太慢，圖片還沒load完動畫就開始放 */
+	animation-direction: normal;	/* 左到右，reverse是右到左 */
+	animation-fill-mode: forwards;	/* 停在最右邊的格子，因為是normal，所以是最後一格 */
+	/* 一樣的效果
+	animation-direction: reverse;	
+	animation-fill-mode: backwards;	
+	*/
+
+	-webkit-animation-name: pep1;
+	-webkit-animation-duration: 17s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+@keyframes pep1{
+	0%{
+		background: url(../images/id1.png) no-repeat;
+        background-size: cover;
+	}
+	
+	20%{
+        background: url(../images/id2.png) no-repeat;
+        background-size: cover;
+    }
+    
+    40%{
+        background: url(../images/id3.png) no-repeat;
+        background-size: cover;
+    }
+
+    60%{
+        background: url(../images/id4.png) no-repeat;
+        background-size: cover;
+    }
+
+    80%{
+        background: url(../images/id5.png) no-repeat;
+        background-size: cover;
+    }
+
+    100%{
+        background: url(../images/id1.png) no-repeat;
+        background-size: cover;
+    }
+}
+
+#pic2_2{
+    background: url(../images/dm1.png) no-repeat;
+    background-size: cover;
+    display: none;
+
+    animation-name: pep2;
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-delay: 1s;	/* 怕網速太慢，圖片還沒load完動畫就開始放 */
+	animation-direction: normal;	/* 左到右，reverse是右到左 */
+	animation-fill-mode: forwards;	/* 停在最右邊的格子，因為是normal，所以是最後一格 */
+	/* 一樣的效果
+	animation-direction: reverse;	
+	animation-fill-mode: backwards;	
+	*/
+
+	-webkit-animation-name: pep2;
+	-webkit-animation-duration: 9s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+@keyframes pep2{
+	0%{
+		background: url(../images/dm1.png) no-repeat;
+        background-size: cover;
+	}
+	
+	33.33%{
+        background: url(../images/dm2.png) no-repeat;
+        background-size: cover;
+    }
+    
+    66.66%{
+        background: url(../images/dm3.png) no-repeat;
+        background-size: cover;
+    }
+
+    100%{
+        background: url(../images/dm1.png) no-repeat;
+        background-size: cover;
+    }
+}
+
+#pic2_3{
+    background: url(../images/py1.png) no-repeat;
+    background-size: cover;
+    display: none;
+
+    animation-name: pep3;
+	animation-duration: 14s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-delay: 1s;	/* 怕網速太慢，圖片還沒load完動畫就開始放 */
+	animation-direction: normal;	/* 左到右，reverse是右到左 */
+	animation-fill-mode: forwards;	/* 停在最右邊的格子，因為是normal，所以是最後一格 */
+	/* 一樣的效果
+	animation-direction: reverse;	
+	animation-fill-mode: backwards;	
+	*/
+
+	-webkit-animation-name: pep3;
+	-webkit-animation-duration: 14s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes pep3{
+	0%{
+		background: url(../images/py1.png) no-repeat;
+        background-size: cover;
+	}
+	
+	25%{
+        background: url(../images/py2.png) no-repeat;
+        background-size: cover;
+    }
+    
+    50%{
+        background: url(../images/py3.png) no-repeat;
+        background-size: cover;
+    }
+
+    75%{
+        background: url(../images/py4.png) no-repeat;
+        background-size: cover;
+    }
+
+    100%{
+        background: url(../images/py1.png) no-repeat;
+        background-size: cover;
+    }
+}
+
+#p2_1{
+    background: url(../images/id3.png) no-repeat;
+    background-size: cover;
+    background-position: 40% 0px;
+    border: solid rgb(91, 140, 219) 20px;
+}
+
+#p2_1:hover{
+    top: 23%;
+    transition: top 0.5s;
+}
+
+#p2_1 span{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3px 70px;
+}
+
+#p2_2{
+    background: url(../images/dm.png);
+    background-size: cover;
+    background-position: 40% 0px;
+    border: solid rgb(91, 140, 219) 20px;
+}
+
+#p2_2:hover{
+    top: 68%;
+    transition: top 0.5s;
+}
+
+#p2_2 span{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3px 75px;
+}
+
+#p2_3{
+    background: url(../images/py.jpg) no-repeat;
+    background-size: cover;
+    background-position: 40% 0;
+    border: solid rgb(91, 140, 219) 20px;
+}
+
+#p2_3:hover{
+    top: 15%;
+    transition: top 0.5s;
+}
+
+#p2_3 span{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3px 80px;
+}
+
+/* Lemongrab */
+#pic3_1{
+    background: url(../images/hp1.png) no-repeat;
+    background-size: cover;
+    display: none;
+
+    animation-name: lb1;
+	animation-duration: 18s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-delay: 1s;	/* 怕網速太慢，圖片還沒load完動畫就開始放 */
+	animation-direction: normal;	/* 左到右，reverse是右到左 */
+	animation-fill-mode: forwards;	/* 停在最右邊的格子，因為是normal，所以是最後一格 */
+	/* 一樣的效果
+	animation-direction: reverse;	
+	animation-fill-mode: backwards;	
+	*/
+
+	-webkit-animation-name: lb1;
+	-webkit-animation-duration: 18s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+@keyframes lb1{
+	0%{
+		background: url(../images/hp1.png) no-repeat;
+        background-size: cover;
+	}
+	
+	20%{
+        background: url(../images/hp2.png) no-repeat;
+        background-size: cover;
+    }
+    
+    40%{
+        background: url(../images/hp3.png) no-repeat;
+        background-size: cover;
+    }
+
+    60%{
+        background: url(../images/hp4.png) no-repeat;
+        background-size: cover;
+    }
+
+    80%{
+        background: url(../images/hp5.png) no-repeat;
+        background-size: cover;
+    }
+
+    100%{
+        background: url(../images/hp1.png) no-repeat;
+        background-size: cover;
+    }
+}
+
+
+#pic3_2{
+    /*background: url(../images/bm1.png) no-repeat;*/
+    background-size: cover;
+    background: black;
+    display: none;
+}
+
+#pic3_2 iframe{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+
+#pic3_3{
+    background: url(../images/lsp1.png) no-repeat;
+    background-size: cover;
+    display: none;
+
+    animation-name: lb3;
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-delay: 1s;	/* 怕網速太慢，圖片還沒load完動畫就開始放 */
+	animation-direction: normal;	/* 左到右，reverse是右到左 */
+	animation-fill-mode: forwards;	/* 停在最右邊的格子，因為是normal，所以是最後一格 */
+	/* 一樣的效果
+	animation-direction: reverse;	
+	animation-fill-mode: backwards;	
+	*/
+
+	-webkit-animation-name: lb3;
+	-webkit-animation-duration: 9s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes lb3{
+	0%{
+		background: url(../images/lsp1.png) no-repeat;
+        background-size: cover;
+	}
+	
+	33.33%{
+        background: url(../images/lsp2.png) no-repeat;
+        background-size: cover;
+    }
+    
+    66.66%{
+        background: url(../images/lsp3.png) no-repeat;
+        background-size: cover;
+    }
+
+    100%{
+        background: url(../images/lsp1.png) no-repeat;
+        background-size: cover;
+    }
+}
+
+#p3_1{
+    background: url(../images/hp.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    border: solid rgb(211, 231, 124) 20px;
+}
+
+#p3_1:hover{
+    top: 23%;
+    transition: top 0.5s;
+}
+
+#p3_1 span{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3px 40px;
+}
+
+#p3_2{
+    background: url(../images/lb.png);
+    background-size: cover;
+    background-position: 50% 0px;
+    border: solid rgb(211, 231, 124) 20px;
+}
+
+#p3_2:hover{
+    top: 68%;
+    transition: top 0.5s;
+}
+
+#p3_2 span{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3px 0px;
+}
+
+#p3_3{
+    background: url(../images/lsp.png);
+    background-size: cover;
+    background-position: 40% 0px;
+    border: solid rgb(211, 231, 124) 20px;
+}
+
+#p3_3:hover{
+    top: 15%;
+    transition: top 0.5s;
+}
+
+#p3_3 span{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3px 35px;
+}
+
+footer{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: right;
+    font-family: 'JF';
+    font-size: 13px;
+    z-index: 10;
+}

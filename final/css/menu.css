@@ -1,0 +1,282 @@
+.menubtn{
+    position: fixed;
+    top :3%;
+    left : 5.85vw;
+    width: 43px;
+    height: 43px;
+    z-index: 1000;
+    -ms-transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+    z-index: 20000;
+}
+
+.outerline{
+    position: relative;
+    margin: 4px 0;
+    height: 5px;
+    width: 150%;
+    text-align: right;
+}
+
+.line{
+    position: relative;
+    background: rgb(158, 150, 140);
+    margin: 4px 0;
+    width: 38px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.menubtn:hover{
+    cursor: pointer;
+}
+
+.menu{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 27px;   
+    position: fixed;
+    top: 0;
+    left: -30%;
+    height: 100%;
+    width: 11.7vw;
+    opacity: 0.9;
+    text-align: right;
+    box-shadow: 2px 2px 5px #cccccc;
+    background: rgb(225, 218, 205);
+    z-index: 10000;
+}
+
+.menu ul{
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    -ms-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu ul li{
+    position: relative;
+    margin: auto;
+    display: block;
+    height: 60px;
+    width: fit-content;
+    line-height: 60px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu .backline{
+    background: #ffe032;
+    width: 100%;
+    height: 7px;
+    border-radius: 3px;
+    position: absolute;
+    padding: 0 2px;
+    top: 50%;
+    left: 0;
+    -ms-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+    z-index: -10;
+    display: none;
+    opacity: 1;
+}
+
+.menu ul li:hover{
+    cursor: pointer;
+}
+
+.menu ul li:hover .backline{
+    display: block;
+}
+
+.menu_flag .backline{
+    display: block;
+}
+
+.menu .name{
+    font-size: 23px;
+    width: fit-content;
+    font-family: 'Handlee', cursive;
+}
+
+.menu .name:hover{
+    cursor: auto;
+}
+
+.sketch{
+    width: 100%;
+}
+
+.submenu{
+    position: absolute;
+    top: 0;
+    left: 11.7vw;
+    width: 180px;
+    margin: 0;
+    font-size: 23px;   
+    height: 100vh;
+    font-family: 'Nanum Pen Script', cursive;
+    box-shadow: 2px 2px 5px #cccccc;
+    z-index: 10000;
+    background: rgb(255, 243, 231);
+    color: rgb(5, 5, 5);
+    -ms-transform: none;
+	-webkit-transform: none;
+    transform: none;
+    display: none;
+}
+
+.submenu ul{
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+    margin: 0;
+    padding: 0;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.submenu ul li{
+    position: relative;
+    margin: auto;
+    display: block;
+    height: 60px;
+    width: fit-content;
+    line-height: 60px;
+}
+
+.submenu a{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+}
+
+.submenu ul li:hover{
+    cursor: pointer;
+}
+
+
+.submenu .name:hover{
+    cursor: auto;
+}
+
+.sketchhome{
+    display: none;
+}
+
+.sketch_b{
+    display: none;
+}
+
+.back2menu{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background: rgb(77, 63, 55);
+    color: blanchedalmond;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;  
+}
+
+.back2menu:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1262px) and (min-width: 768px){
+    .menubtn{
+        left : 75px;
+    }
+
+    .menu{
+        width: 150px;
+        left: -300px;
+    }
+
+    .submenu{
+        left: 150px;
+    }
+
+    .sketch_a{
+        display: none;
+    }
+
+    .sketch_b{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .menubtn{
+        left: 36px;
+    }
+
+    .menu{
+        width: 100%;
+        top: -120%;
+        left: 0;
+        height: 100%;
+        opacity: 0.9;
+    }
+
+    .menu ul{
+        top: 0;
+        -ms-transform: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .menu ul li{
+        font-size: 30px;
+    }
+
+    .menu .name{
+        border: none;
+        width: 100%;
+        text-align: center;
+        text-decoration: wavy;
+        font-size: 30px;
+    }
+
+    .submenu{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    .submenu ul li{
+        line-height: 40px;
+        font-size: 25px;
+        height: 40px;
+    }
+
+    .sketch_a{
+        display: none;
+    }
+
+    .sketch_b{
+        display: block;
+    }
+
+    .menu .backline{
+        opacity: 0;
+    }
+}

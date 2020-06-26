@@ -1,0 +1,250 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Nanum+Pen+Script&family=Noto+Sans+TC:wght@300&display=swap');
+@import url('menu.css');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 251, 247);
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.swi{
+    position: relative;
+}
+
+
+.wave{
+    position: absolute;
+    z-index: 1;
+    top: 145vh;
+}
+
+footer{
+    position: absolute;
+    top: 170vh;
+    width: 100%;
+    text-align: center;
+    z-index: 100000;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 25px;
+}
+
+#s_pic{
+    position: relative;
+	width: 70%;
+	height: 100vh;
+}
+
+#s_pic img{
+    height: 100%;
+    width: auto;
+}
+
+.wordbox{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: rgb(98, 89, 82);
+}
+
+.pro2{
+    position: relative;
+    color: rgb(98, 89, 82);
+    text-align: center;
+    width: 100%;
+    font-family: 'Nanum Pen Script', cursive;
+    height: 20vh;
+    line-height: 20vh;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px #a7a7a7;
+}
+
+.topics{
+    color: rgb(98, 89, 82);
+    position: relative;
+    display: flex;
+	display: -webkit-flex;
+	align-items: baseline;
+	flex-wrap: wrap;	/* 滿了換行 */
+    width: 95%;
+    margin: auto;
+    height: 70vh;
+}
+
+.topic{
+    width: 25%;
+    height:100%;
+    -webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.topic header{
+    display: block;
+    text-align: center;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 50px;
+    height: 20%;
+    color:  #337780;
+    text-shadow: 2px 1px 0px #62c3cf;
+}
+
+.topic .imgbox{
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
+.space{
+    width: 100%;
+    height: 11vh;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(98, 89, 82);
+}
+
+i{
+    padding: 3px;
+}
+
+.ig:hover{
+    color: rgb(160, 130, 107);
+    transition: 0.8s ease;
+}
+
+.circle{
+    width: 17vw;
+    height: 17vw;
+    background: #337780;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    box-shadow: 2px 2px 5px #a7a7a7;
+}
+
+.topic header{
+    height: 20vh;
+}
+
+.topic:nth-child(2n) header{
+    color: rgb(110, 91, 39);
+    text-shadow: 02px 0.5px 0px rgb(255, 215, 106);
+}
+
+.circle:hover{
+    transform: scale(1.1);
+    transition: 0.6s ease;
+}
+
+#c1{
+    background: url(../images/sketch/Working_Holiday/4.jpg);
+    background-size: 170%;
+    background-position: center;
+}
+
+#c2{
+    background: url(../images/sketch/Urban/3.jpg);
+    background-size: 150%;
+    background-position: center;
+}
+
+#c3{
+    background: url(../images/sketch/Sanyi/1.jpg);
+    background-size: 150%;
+    background-position: center;
+}
+
+#c4{
+    background: url(../images/sketch/Nagoya/2.jpg);
+    background-size: 150%;
+    background-position: center;
+}
+
+#c5{
+    background: url(../images/sketch/Countryside/1.jpg);
+    background-size: 135%;
+    background-position: center;
+}
+
+#c6{
+    background: url(../images/sketch/Ruined_Hotel/2.jpg);
+    background-size: 148%;
+    background-position: center;
+}
+
+#c7{
+    background: url(../images/sketch/Treasure_Hill/1.jpg);
+    background-size: 148%;
+    background-position: center;
+}
+
+#c8{
+    background: url(../images/sketch/Kaohsiung/3.jpg);
+    background-size: 130%;
+    background-position: center;
+}
+
+#c9{
+    background: url(../images/sketch/Alishan/1.jpg);
+    background-size: 130%;
+    background-position: center;
+}
+
+@media only screen and (max-width: 1262px) and (min-width: 768px){
+    
+}
+
+@media only screen and (max-width: 768px){
+    .topics{
+        position: relative;
+        display: block;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .topic{
+        position: relative;
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .topic header{
+        height: 100px;
+        line-height:  100px;
+    }
+    
+    .circle{
+        position: relative;
+        display: block;
+        width: 60vw;
+        height: 60vw;
+        margin: auto;
+    }
+
+    .wave{
+        display: none;
+    }
+    
+    .sp{
+        position: relative;
+        width: 100%;
+        height: 20vh;
+    }
+
+    footer{
+        position: relative;
+        top: auto;
+        height: 10vh;
+        line-height: 10vh;
+        background: #c3e2dd;
+    }
+}

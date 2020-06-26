@@ -1,0 +1,12 @@
+<ul>
+    <li><a href="index.html">ABOUT</a></li>
+    <li><a href="art.html">ART WORK</a></li>
+    <li><a href="#">OTHER</a></li>
+</ul>
+
+<script>
+    $(document).ready(function(){
+        var pn = $("body").data('pagenum');
+        $('li').eq(pn).addClass('ch_bg');
+    });
+</script>

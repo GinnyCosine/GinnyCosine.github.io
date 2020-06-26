@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	margin:0;
+	padding:0;
+	background:rgb(206, 206, 206);
+}
+
+header{
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;	/* 文字置中 */
+}
+
+header img{
+	display: block;
+	padding: 30px;
+	margin: auto;	/* 物件置中 */
+}
+
+/* nav bar */
+nav{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	background:rgb(52, 90, 196);
+	position: -webkit-sticky;	/* Safari */
+	position: sticky;	/* 會根據卷軸判斷，滑到的時候就fixed */
+	top: 0;
+	z-index: 2000;	/*層疊順序，數字越大越上面 */
+}
+
+nav ul{
+	margin: 0; 
+	padding: 0;
+}
+
+nav li{
+	display: inline-block;
+}
+
+nav li a{
+	display: inline-block;
+	padding:30px;
+	color: #fff;
+	text-decoration: none;  /*將底線去除*/
+}
+
+nav li a:hover{
+	color: #000;
+}
+
+section{
+	width: 80%;
+	margin: auto;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	-webkit-column-gap: 20px;
+	-moz-column-gap: 20px;
+	column-gap: 20px;
+}
+
+.box{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin: 12px 0 0;
+	overflow: hidden;
+	z-index: 10;
+	box-shadow: 2px 2px 8px rgb(24, 5, 92);	/* 每一小塊都有陰影? */
+	border-radius: 10px;
+}
+
+.imgbox{
+	width: 100%;
+	overflow: hidden;
+}
+
+.box img{
+	width: 100%;
+	overflow: hidden;
+}
+
+.box:hover{
+	cursor: pointer;
+}
+
+.box .imgbox img{
+	-ms-transform: scale(1,1);	/* IE 9 */
+	-webkit-transform: scale(1,1);	/* Safari */
+	transform: scale(1,1);	/* Standard Syntex */
+
+	/* 打在底下的話會無法淡出，可能是因為滑鼠不在 .box:hover 裡面吧 */
+	transition: transform 1.5s;	
+	-webkit-transition: transform 1.5s;
+
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;
+
+}
+
+.box:hover .imgbox img{
+	-ms-transform: scale(1.2, 1.2);
+	-webkit-transform: scale(1.2, 1.2);
+	transform: scale(1.2, 1.2);
+}
+
+.box h3{
+	box-sizing: border-box;
+	padding: 0 20px;
+	color: #A60F2B;
+}
+
+.box p{
+	box-sizing: border-box;
+	padding: 0 20px;
+	color: #666;
+}
+
+.head{
+	display: inline-block;
+	padding: 0 20px 20px;
+}
+
+.head img{
+	float: left;
+	width: 40px;
+	height: 40px;		/* 這兩個一樣，文字才會對其圖片中間 */
+	border-radius: 50%;
+}
+
+.head span{
+	float: left;	/* 或是拿掉用 verticle-align: top; */
+	font-size: 13px;
+	color: #999;
+	line-height: 40px;	/* 這兩個一樣，文字才會對其圖片中間 */
+	margin-left: 10px;
+}
+
+aside{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 100000;
+}
+
+.totop{
+	width: 44px;
+	height: 44px;
+	background: #A60F2B url(../images/top2x.png) no-repeat;	/* 為了適應手機的解析度 */
+	background-size: 200%;	/* 只想要圖片的一半 */
+	background-position: 0 0;
+}
+
+.totop:hover{
+	background: #000 url(../images/top2x.png) no-repeat;
+	background-size: 200%;
+	background-position: -44px 0;
+}
+
+footer{
+	padding: 20px 0;
+	text-align: center;
+}

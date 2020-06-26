@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("menu.css");
+/* basic settings */
+
+body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+	margin:0;
+	padding:0;
+	background:#e5e5e5;
+}
+
+::-moz-selection{	/* 選取的時候的屬性設定 */
+	color: #FFF;
+	background: rgb(250, 188, 17);
+}
+
+::selection{		/* 選取的時候的屬性設定 */
+	color: #FFF;
+	background: rgb(250, 188, 17);
+}
+
+/* header */
+header{
+	position:fixed;
+	top:0;
+	width:100%;
+	min-width:980px;
+	box-sizing:border-box;
+	background: rgba(0,0,0,0.5);
+	z-index:1000;
+}
+
+/* nav */
+nav{
+	width:100%;
+	margin:auto;
+	text-align:center;
+}
+
+.banner{
+	display: block;	/* 確保是一個區塊 */
+	position: relative;
+	overflow: hidden;	/* 超出容器範圍會隱藏 */
+	width: 100%;
+	min-width: 980px;
+	height: 550px;
+	background: url(../images/banner.jpg) no-repeat;
+	background-size: 100%;
+}
+
+.anitext{
+	position: absolute;
+	padding: 10px;
+	left: 20%;
+	color: #fff;
+	font-size: 60px;
+	font-weight: bold;
+	opacity: 0;	/* 看不到 */
+
+	animation-name: ant;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 1s;	/* 怕網速太慢，圖片還沒load完動畫就開始放 */
+	animation-direction: normal;	/* 左到右，reverse是右到左 */
+	animation-fill-mode: forwards;	/* 停在最右邊的格子，因為是normal，所以是最後一格 */
+	/* 一樣的效果
+	animation-direction: reverse;	
+	animation-fill-mode: backwards;	
+	*/
+
+	-webkit-animation-name: ant;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes ant{
+	from{
+		top: 80%;
+		opacity: 0;
+		background: #000;
+	}
+	
+	to{
+		top: 40%;
+		opacity: 0.8;
+		background: #f30;
+	}
+	
+	/* 也可以用 % 來表示 */
+}
+
+/* section */
+section{
+	width: 80%;
+	min-width: 980px;
+	margin: auto;
+	margin-top: 70px;
+}
+
+article{
+	float: left;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding: 10px 0px;
+}
+
+article .picbox, article .desbox{
+	float: left;
+	position: relative;
+	width: 66.66%;
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+article .desbox{
+	width: 33.33%;
+	line-height: 1.5em;
+}
+
+.desbox h2{
+	color: #f30;
+	line-height: 1.5em;
+}
+
+.desbox p{
+	text-align: justify;
+}
+
+article:nth-child(2n){	/* 挑出2的倍數的子類變色 */
+	background: #fff;
+}
+
+article:nth-child(2n) h2{
+	color: #000;
+}
+
+small{
+	color: #999;
+}
+
+small::before{	/* 選元素內的部分 */
+	content: url(../images/pen.png) "Date: " ;	/* 放在 CSS 裡面的圖片不會被選到!! */
+}
+
+mark{
+	background: #999;
+	color: #fff;
+	padding: 5px;
+}
+
+.picbox img{
+	width: 100%;
+	background: rgba(0,0,0,1);
+}
+
+.fadebox{
+	/* 讓物件水平垂直置中 */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+
+	/*
+	放在這的話會看到More從右下跑到正中間的瞬間
+	-webkit-transition: 0.5s ease;	
+	transition: 0.5s ease;
+	*/
+	opacity: 0;
+}
+
+.picbox:hover img{
+	filter: brightness(30%);	/* 讓圖片變淡 */
+	-webkit-filter: brightness(30%);
+}
+
+.picbox:hover .fadebox{
+	opacity: 1;
+	/* 放在這的話會才會讓More淡入 */
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.fadebox a{
+	display: block;
+	padding: 16px 32px;
+	color: #fff;
+	text-decoration: none;
+	background: #f30;
+}
+/* footer */
+
+footer{
+	clear:both;	/* 不確定上面的會不會用到float，如果有用到，就讓它不受影響 */
+	padding:50px;
+	text-align:center;	
+}

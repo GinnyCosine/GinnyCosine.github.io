@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
+/* CSS Document */
+
+section, aside{
+	float:left;
+	height:480px;
+}
+
+aside{
+	width:200px;	
+}
+
+section{
+	width:480px;
+	background:#ddd;
+	overflow: hidden;
+}
+
+.box{
+	width: 200px;
+	height: 160px;
+	font-size:100px;
+	background: #0CF;
+	text-align: center;
+}
+
+.big{
+	height:480px;
+	width: 1440px;
+}
+
+.content{
+	float: left; /* 水平排列 */
+	position: relative;
+	width: 480px;
+	height:480px;
+	background:#F60;
+}
+
+.yel{
+	background:#FF0;
+}
+
+.pink{
+	background:#F3c;
+}
+
+.box:hover{
+	background:#36F;
+	cursor:pointer;
+}
+
+.ch_bg{
+	background:#36F;
+}

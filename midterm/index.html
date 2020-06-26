@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Adventure Time</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="./images/L_ic.ico" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src='javascript/index.js'></script>
+</head>
+ 
+<body>
+    <img id='menu_icon' src="./images/menu.png" />
+    <div class="menu">
+        <img src="./images/x.png" id='close_icon' width="30px"/>
+        <a href="./index.html"><div class="item">Land of Ooo</div></a>
+        <a href="./TreeFort.html"><div class="item">Tree Fort</div></a>
+        <a href="./CandyKingdom.html"><div class="item">Candy<br>Kingdom</div></a>
+        <a href="./IceKingdom.html"><div class="item">Ice<br>Kingdom</div></a>
+        <div class="maker">Made By<br>GinnyCosine</div>
+    </div>
+    <div class="dots">
+        <div class="dot" id='d1'></div>
+        <br>
+        <div class="dot" id='d2'></div>
+        <br>
+        <div class="dot" id='d3'></div>
+        <br>
+        <div class="dot" id='d4'></div>
+    </div>
+    <section id='top' class="cover1">
+        <header>
+            ADVENTURE<br>
+            <span>T</span>
+            <span>I</span>
+            <span>M</span>
+            <span>E</span>
+        </header>
+        <div id="circle1_c"></div>
+        <div id="circle2_c"></div>
+        <div id="circle3_c"></div>
+        <div class='down'><img src="images/arrow.png" width="50px" height="50px"/></div>
+    </section>
+    <section class="cover2">
+        <p>一部美國電視動畫，自2010年4月5日正式首播，至2018年9月3日完結，深受觀眾喜愛
+            <br>
+            描述人類青少年阿寶<span class="eng">Finn</span>和身體能夠伸縮自如的酷狗老皮<span class="eng">Jake</span>
+            在哇賽秘境<span class="eng">Land of Ooo</span>的冒險旅程
+            <br>
+            故事主要發生在兩人居住的樹屋<span class="eng">Tree Fort</span>、泡泡糖公主的糖果王國<span class="eng">Candy Kingdom</span>、冰霸王的冰王國<span class="eng">Ice Kingdom</span>
+        </p>
+        <div class='down'><img src="images/arrow2.png" width="50px" height="50px"/></div>
+    </section>
+    <section class="cover3">
+        <div class="main">Land of Ooo</div>
+        <div class="banner"><img src='images/jake.png'/>VISIT !</div>
+        <div class="block" id='block1'><span>Candy Kingdom</span></div>
+        <div class="block" id='block2'><span>Tree Fort</span></div>
+        <div class="block" id='block3'><span>Ice Kingdom</span></div>
+        <a href='CandyKingdom.html' target="_blank"><div class="block_c" id='block1_c'></div></a>
+        <a href='TreeFort.html' target="_blank"><div class="block_c" id='block2_c'></div></a>
+        <a href='IceKingdom.html' target="_blank"><div class="block_c" id='block3_c'></div></a>
+    </section>
+    <section class="cover4">
+        <div class="hello">
+            看來你已經充分了解探險活寶了<br>
+            It' s Adventure Time !
+            <div class="button">接受挑戰</div>
+        </div>
+        <div class="score_bord">
+            Your Score:
+            <div id="score"></div>
+        </div>
+        <div class="encourage">
+            <p id='en'></p>
+            <div class="again">再挑戰一次</div>
+        </div>
+        <div class="question" id='q1'>
+            <header>Q1</header>
+            <div class="q_img"></div>
+            <article>
+                <p>阿寶第二次斷手是因為 ?</p>
+                <div class="options">
+                    <div class="option" id='q1_1'><div class="num">1</div>為了抓他老爸</div>
+                    <br>
+                    <div class="option" id='q1_2'><div class="num">2</div>草劍把阿寶的手帶走</div>
+                    <br>
+                    <div class="option" id='q1_3'><div class="num">3</div>被門夾斷</div>
+                </div>
+            </article>
+        </div>
+        <div class="question" id='q2'>
+            <header>Q2</header>
+            <div class="q_img"></div>
+            <article>
+                <p>何者是老皮小孩的名字 ?</p>
+                <div class="options">
+                    <div class="option" id='q2_1'><div class="num">1</div>電視</div>
+                    <br>
+                    <div class="option" id='q2_2'><div class="num">2</div>金古煥</div>
+                    <br>
+                    <div class="option" id='q2_3'><div class="num">3</div>大提琴</div>
+                </div>
+            </article>
+        </div>
+        <div class="question" id='q3'>
+            <header>Q3</header>
+            <div class="q_img"></div>
+            <article>
+                <p>冰霸王的本名叫做 ?</p>
+                <div class="options">
+                    <div class="option" id='q3_1'><div class="num">1</div>保羅</div>
+                    <br>
+                    <div class="option" id='q3_2'><div class="num">2</div>亞歷山大</div>
+                    <br>
+                    <div class="option" id='q3_3'><div class="num">3</div>賽門</div>
+                </div>
+            </article>
+        </div>
+        <div class="question" id='q4'>
+            <header>Q4</header>
+            <div class="q_img"></div>
+            <article>
+                <p>泡泡糖公主和誰在一起 ?</p>
+                <div class="options">
+                    <div class="option" id='q4_1'><div class="num">1</div>吸血鬼女王</div>
+                    <br>
+                    <div class="option" id='q4_2'><div class="num">2</div>瑪瑟琳</div>
+                    <br>
+                    <div class="option" id='q4_3'><div class="num">3</div>以上皆是</div>
+                </div>
+            </article>
+        </div>
+        <div class="question" id='q5'>
+            <header>Q5</header>
+            <div class="q_img"></div>
+            <article>
+                <p>誰是薄荷糖管家的偶像 ?</p>
+                <div class="options">
+                    <div class="option" id='q5_1'><div class="num">1</div>寒森</div>
+                    <br>
+                    <div class="option" id='q5_2'><div class="num">2</div>死神</div>
+                    <br>
+                    <div class="option" id='q5_3'><div class="num">3</div>吸血鬼之王</div>
+                </div>
+            </article>
+        </div>
+        <footer>
+            &copy; 此為課堂學習及作業繳交使用，版權為原作者公司所有，請勿轉用商用。
+        </footer>
+    </section>
+
+</body>
+</html>

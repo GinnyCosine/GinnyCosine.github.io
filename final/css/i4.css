@@ -1,0 +1,13 @@
+@import url('subsubpage.css');
+
+header{
+    text-shadow: 2px 2px 0px #80D2F2;
+}
+
+.title{
+    background: #F2E4BB;
+}
+
+.description span{
+    text-shadow: 1px 0.5px 0px #62D9A1;
+}

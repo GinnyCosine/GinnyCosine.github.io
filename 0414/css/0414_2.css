@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("menu_2.css");
+/* basic settings */
+
+body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+	margin:0;
+	padding:0;
+	background:#e5e5e5;
+}
+
+::-moz-selection{	/* 選取的時候的屬性設定 */
+	color: #FFF;
+	background: rgb(250, 188, 17);
+}
+
+::selection{		/* 選取的時候的屬性設定 */
+	color: #FFF;
+	background: rgb(250, 188, 17);
+}
+
+/* header */
+header{
+	position:fixed;
+	top:0;
+	left: 0;
+	width:10%;
+	height: 100%;
+	min-width:150px;
+	box-sizing:border-box;
+	background: rgba(0,0,0,0.5);
+	z-index:1000;
+}
+
+.bias{
+	height: 200px;
+
+}
+
+/* nav */
+nav{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	margin: auto;
+}
+
+/* section */
+section{
+	width: 80%;
+	min-width: 980px;
+	margin: auto;
+	margin-top: 70px;
+}
+
+article{
+	float: left;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding: 10px 0px;
+}
+
+article .picbox, article .desbox{
+	float: left;
+	position: relative;
+	width: 66.66%;
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+article .desbox{
+	width: 33.33%;
+	line-height: 1.5em;
+}
+
+.desbox h2{
+	color: #f30;
+	line-height: 1.5em;
+}
+
+.desbox p{
+	text-align: justify;
+}
+
+article:nth-child(2n){	/* 挑出2的倍數的子類變色 */
+	background: #fff;
+}
+
+article:nth-child(2n) h2{
+	color: #000;
+}
+
+small{
+	color: #999;
+}
+
+small::before{	/* 選元素內的部分 */
+	content: url(../images/pen.png) "Date: " ;	/* 放在 CSS 裡面的圖片不會被選到!! */
+}
+
+mark{
+	background: #999;
+	color: #fff;
+	padding: 5px;
+}
+
+.picbox img{
+	width: 100%;
+	background: rgba(0,0,0,1);
+}
+
+.fadebox{
+	/* 讓物件水平垂直置中 */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+
+	/*
+	放在這的話會看到More從右下跑到正中間的瞬間
+	-webkit-transition: 0.5s ease;	
+	transition: 0.5s ease;
+	*/
+	opacity: 0;
+}
+
+.picbox:hover img{
+	filter: brightness(30%);	/* 讓圖片變淡 */
+	-webkit-filter: brightness(30%);
+}
+
+.picbox:hover .fadebox{
+	opacity: 1;
+	/* 放在這的話會才會讓More淡入 */
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.fadebox a{
+	display: block;
+	padding: 16px 32px;
+	color: #fff;
+	text-decoration: none;
+	background: #f30;
+}
+/* footer */
+
+footer{
+	clear:both;	/* 不確定上面的會不會用到float，如果有用到，就讓它不受影響 */
+	padding:50px;
+	text-align:center;	
+}

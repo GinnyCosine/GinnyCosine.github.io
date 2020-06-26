@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+/*aside*/
+aside{
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	z-index: 1000;
+}
+
+.box{
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	font-size:5em;
+	text-align:center;
+	background: #fff;
+	margin:10px;
+}
+
+.box:hover{
+	background:rgb(62, 216, 255);
+	cursor:pointer;
+}
+
+.ch_bg{
+	background:rgb(62, 216, 255);
+}
+
+/*section*/
+section, article{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+article{
+	overflow: hidden;
+}
+
+article:nth-child(1){
+	background: #C60 url(../images/p1.jpeg) no-repeat;
+	background-size: cover;
+}
+
+article:nth-child(2){
+	background: #C60 url(../images/p2.png) no-repeat;
+	background-size: cover;
+}
+
+article:nth-child(3){
+	background: #C60 url(../images/p3.jpg) no-repeat;
+	background-size: cover;
+}
+
+h1{
+	font-size:10em;
+	color:#fff;
+}
+
+.cenalign{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+.moved{
+	/* 建設3D環境 讓子元素可以用3D的方式定位 */
+	transform-style: preserve-3d;
+
+	/* 數字越小 景深越深 */
+	transform: perspective(800px);
+}
+
+.moved h1{
+	font-size:10em;
+	color:#fff;
+}
+
+.moved p{
+	color: #fff;
+}
+
+.moved h1, .moved p{
+	/* all: 對全部的屬性作動畫 */
+	transition: all 1s ease;
+}
+
+.moved.hid h1{
+	opacity: 0;
+	transform: translate3d(0, 0, 400px) rotateY(-20deg);
+}
+
+.moved.hid p{
+	opacity: 0;
+	transform: translate3d(0, 0, 400px) rotateY(20deg);
+}

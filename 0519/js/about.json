@@ -1,0 +1,25 @@
+[
+    {
+        "pic": "images/a4.png",
+        "title": "cat",
+        "detail": "some description",
+        "head": "images/2.jpg",
+        "wdate": "2025.10.30"
+    },
+
+    {
+        "pic": "images/a2.png",
+        "title": "kitty",
+        "detail": "some description",
+        "head": "images/2.jpg",
+        "wdate": "2025.10.30"
+    },
+
+    {
+        "pic": "images/a5.png",
+        "title": "paws",
+        "detail": "some description",
+        "head": "images/2.jpg",
+        "wdate": "2025.10.30"
+    }
+]

@@ -1,0 +1,131 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Nanum+Pen+Script&family=Noto+Sans+TC:wght@300&display=swap');
+@import url('menu.css');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 251, 247);
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+header{
+    display: block;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(105, 93, 80);
+    text-shadow: 2px 2px 0px rgb(255, 215, 106);
+    padding: 10px 0;
+}
+
+
+
+.pic{
+    position: absolute;
+    width: 50%;
+    left: 11%;
+    box-shadow: 2px 2px 5px #a7a7a7;
+}
+
+
+.description{
+    position: fixed;
+    right: 7%;
+    text-align: left;
+    width: 27%;
+    height: 100vh;
+}
+
+p{
+    display: block;
+    position: relative;
+    padding: 10px 0 0 0;
+    width: 100%;
+    color: rgb(98, 89, 82);
+    font-size: 16px;
+}
+
+.description img{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 10%;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 2px 2px 5px #a7a7a7;
+}
+
+.description span{
+    position: relative;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Handlee', cursive;
+}
+
+.title{
+    position: relative;
+    display: block;
+    font-size: 19px;
+    color: rgb(98, 89, 82);
+    background: #c3e2dd;
+    border-radius: 14px;
+    width: fit-content;
+    padding: 2px 7px;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 13px;
+    height: 13px;
+    text-align: center;
+    color: rgb(128, 115, 106);
+    background: rgb(242, 250, 199);
+    padding: 13px 0;
+}
+
+.child{
+    font-family: 'Noto Sans TC', sans-serif;
+    background: rgba(255, 251, 247, 0.8);
+    text-shadow: none;
+    color: black;
+}
+
+.space{
+    width: auto;
+    height: 30vh;
+}
+
+@media only screen and (max-width: 1200px){
+    .pic{
+        left: 12%;
+    }
+    
+    .description{
+        position: absolute;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 768px){
+    .pic{
+        position: relative;
+        display: block;
+        left: auto;
+        margin: auto;
+        width: 80%;
+    }
+    .description{
+        position: relative;
+        display: block;
+        right: auto;
+        height: auto;
+        margin: auto;
+        width: 80%;
+    }
+}

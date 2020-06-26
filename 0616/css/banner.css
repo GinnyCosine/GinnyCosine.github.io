@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+a img{
+	border: none;
+}
+
+#s_pic, #v_pic{
+	position: relative;
+	width: 100%;
+	height:auto;
+}
+
+#s_pic img, #v_pic img{
+	width:100%;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

@@ -1,0 +1,20 @@
+@import url('subsubpage.css');
+
+header{
+    text-shadow: 2px 2px 0px #6AAED9;
+}
+
+.title{
+    background: rgb(238, 235, 200);
+}
+
+.description span{
+    text-shadow: 1px 0.5px 0px #D97E8E;
+}
+
+header .label{
+    font-size: 35px;
+    font-family: 'Nanum Pen Script', cursive;
+    text-shadow: none;
+    padding: 0 3px;
+}

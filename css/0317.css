@@ -1,0 +1,185 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Noto+Sans+TC|Raleway|Varela+Round&display=swap&subset=chinese-traditional');
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffded;
+}
+
+header, nav, section, article, footer{
+    text-align: center;
+    text-decoration: none; /*將底線去除*/
+}
+
+header{
+    font-size: 32px;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin: auto;
+    color: #010440;
+    /*font-family: 'Baloo Thambi 2', cursive;*/
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+}
+
+header span:hover{
+    background-color: #F2D649;
+    transition: color 0.5s;
+}
+
+nav{
+    background-color: #024873;
+    padding: 10px 0;
+}
+
+nav ul{     /*真正置中*/
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 10px;
+    font-family: 'Baloo Thambi 2', cursive;
+    width: 200px;
+}
+
+nav li a{
+    color: rgb(199, 235, 255);
+    text-decoration: none; /*將底線去除*/
+}
+
+.mark{
+    font-size: 20px;
+    color: rgb(239, 252, 232);
+    background-color: rgb(7, 195, 228);
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav li a:hover{
+    color: rgb(255, 237, 138);
+    font-size: 24px;
+    transition: font-size 0.7s;
+}
+.line{
+    display: inline-block;
+    width: 100%;
+    font-size: 27px;
+    padding-bottom: 5px;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.imgLine{
+    vertical-align: middle;
+}
+
+#right{
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+}
+
+section{
+    width: 80%;     /*隨視窗大小調整*/
+    margin: auto;   /*物件置中*/
+}
+
+article{
+    display: inline-block;
+    width: 180px;
+    border: solid 2px #fffded;
+    background-color: #e2e0cb;
+    border-radius: 10px;
+}
+
+article p{
+    font-size: 20px;
+}
+
+article:hover{
+    background-color: #F2D64B;
+    color: rgb(130, 78, 0);
+    width: 200px;
+    cursor: pointer;
+    transition: background 1s, color 1s,width 1s;
+    -webkit-transition: background 1s, color 1s,width 0.7s;    /* For Safari 3.1 to 6.0 */
+}
+
+.article_a{
+    color: #000;
+    text-decoration: none;
+}
+.article_a:hover{
+    color: #fff;
+}
+
+
+#label{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    border-radius: 7px;
+    background-color: rgb(88, 75, 0);
+    color: rgb(253, 239, 158);
+    border: solid 2px #fffded;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 26px;
+    text-align: center;
+}
+
+#label:hover{
+    cursor: pointer;
+    width: 160px;
+}
+
+#label:active{
+    color: rgb(88, 75, 0);
+    background-color: rgb(253, 239, 158);
+    border: dotted 2px rgb(88, 75, 0);
+}
+
+
+#contain{
+    border-radius: 10px;
+    background-color: #F2D64B;
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 70px;
+    color: #010440;
+    margin: -3px;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 20px;
+    /*border: solid rgb(88, 75, 0);*/
+}
+
+.item{
+    display: inline-block;
+    background-color: beige;
+    text-align: center;
+    width: 100px;
+    box-sizing: border-box;
+}
+
+.content{
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+}
+
+#name{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+footer{
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 20px;
+}

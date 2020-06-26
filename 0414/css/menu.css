@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav ul{
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+
+nav li{
+	position:relative;
+	display:inline-block;
+}
+
+/*==============level 1==============*/
+nav li a{
+	display:block;
+	width:150px;
+	line-height:50px;	/* 等於按鈕高度 */
+	color:#fff;
+	text-decoration:none;
+	text-align:center;
+}
+
+nav li a:hover{
+	color:rgb(0, 51, 146);
+	background:rgb(0, 195, 255);
+}
+
+/*==============level 2==============*/
+nav li ul{	/* 把 level 2 以下的都藏起來了 後面的就不用再寫一次 */
+	position: absolute;
+	display: none;
+	left: 0;
+	margin: 0;
+}
+
+nav ul li:hover > ul{	/* level 1 被滑過的時候，level 2 出現 */
+	display: block;
+}
+
+nav ul ul a{
+	width: 150px;
+	margin: 0;
+	color: #000;
+	background: rgba(163, 234, 255, 0.8);
+}
+
+nav ul ul a:hover{	/* level 2 滑過的時候變色 */
+	color: rgb(255, 255, 255);
+	background: rgb(250, 188, 17);
+}
+
+/*============== level 3 and more ==============*/
+nav ul ul li:hover > ul{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 100%;
+}

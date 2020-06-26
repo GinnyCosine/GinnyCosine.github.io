@@ -1,0 +1,64 @@
+.dots{
+    position: fixed;
+    right: 18px;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    z-index: 10000;
+}
+
+.dot{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: rgb(139, 112, 80);
+}
+
+.dot:hover{
+    cursor: pointer;
+}
+
+.down{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+
+.down img{
+    position: relative;
+    display:block; margin:auto;
+
+    animation-name: down_ant;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-delay: 0.5s;	/* 怕網速太慢，圖片還沒load完動畫就開始放 */
+	animation-direction: normal;	/* 左到右，reverse是右到左 */
+	animation-fill-mode: forwards;	/* 停在最右邊的格子，因為是normal，所以是最後一格 */
+	/* 一樣的效果
+	animation-direction: reverse;	
+	animation-fill-mode: backwards;	
+	*/
+
+	-webkit-animation-name: down_ant;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+@keyframes down_ant{
+	from{
+		bottom: 10px;
+		opacity: 0.8;
+	}
+	
+	to{
+		bottom: -10px;
+		opacity: 0.5;
+	}
+}

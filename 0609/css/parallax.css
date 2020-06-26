@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;	
+}
+
+.parallax-window{
+	min-height: 600px;
+}
+
+.other{
+	min-height: 100vh;
+    background: rgb(0, 79, 124);
+	color:#fff;
+	font-size:100px;
+
+	display: -webkit-flex;
+	display: flex;
+	/* https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items */
+	-webkit-align-items: center;
+	align-items: center;
+
+	/* https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content */
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+footer{	
+	position: fixed;
+	bottom:0;
+	width:100%;
+	text-align:center;
+	z-index:3000;
+	color:#fff;
+}

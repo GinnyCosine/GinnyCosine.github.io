@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	margin:0;
+	padding:0;
+	background:#e5e5e5;
+}
+
+/* nav bar */
+nav{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	background:#CC0;
+}
+
+nav ul{
+	margin: 0; 
+	padding: 0;
+}
+
+nav li{
+	display: inline-block;
+}
+
+nav li a{
+	display: inline-block;
+	padding:30px;
+	color: #fff;
+	text-decoration: none;  /*將底線去除*/
+}
+
+nav li a:hover{
+	color: #000;
+}

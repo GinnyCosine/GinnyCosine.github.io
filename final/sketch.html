@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sketch</title>
+<link rel="shortcut icon" href="images/icon.ico"/>
+<link rel="icon" type="image/png" href="images/icon.png"/>
+<meta name="viewport" content=" width=device-width; initial-scale=1.0;">
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/anime.min.js"></script>
+<script type="text/javascript" src="js/master.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script src="https://kit.fontawesome.com/a08ea32dcc.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../0602/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+<script type="text/javascript" src="../0602/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+<script type="text/javascript" src="js/fancy.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<script src="js/wavify.js"></script>
+<script src="js/jquery.wavify.js"></script>
+<script type="text/javascript" src="../0616/js/swiper.min.js"></script>
+<link href="../0616/css/swiper.min.css" rel="stylesheet" type="text/css">
+<link href="css/sketch.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body data-pagenum="2">
+    <div class="menubtn">
+        <div class="outerline"><div class="line"></div></div>
+        <div class="outerline"><div class="line"></div></div>
+        <div class="outerline"><div class="line"></div></div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li class="name">Shih Cukpow</li>
+            <li id="home"><a href="./index.html">Home<div class="backline"></div></a></li>
+            <div class="sketch sketch_a"><li><a href="./sketch.html">Sketch<div class="backline"></div></a></li></div>
+            <div class="sketch_b"><li>Sketch<div class="backline"></div></li></div>
+            <li id="painting"><a href="./painting.html">Painting<div class="backline"></div></a></li>
+            <li id="illustration"><a href="./illustration.html">Illustration<div class="backline"></div></a></li>
+            <li id="other"><a href="./other.html">Other<div class="backline"></div></a></li>
+        </ul>
+        <div class="submenu sketch">
+            <ul>
+                <li class='sketchhome'><a href="./sketch.html">Sketch Homepage<div class="backline"></div></a></li>
+                <li><a href="./Working_Holiday.html">Working Holiday<div class="backline"></div></a></li>
+                <li><a href="./Urban.html">Urban<div class="backline"></div></a></li>
+                <li><a href="./Sanyi.html">Sanyi<div class="backline"></div></a></li>
+                <li><a href="./Nagoya.html">Nagoya<div class="backline"></div></a></li>
+                <li><a href="./Countryside.html">Countryside<div class="backline"></div></a></li>
+                <li><a href="./Ruined_Hotel.html">Ruin<div class="backline"></div></a></li>
+                <li><a href="./Treasure_Hill.html">Treasure Hill<div class="backline"></div></a></li>
+                <li><a href="./Kaohsiung.html">Kaohsiung<div class="backline"></div></a></li>
+                <li><a href="./Alishan.html">Alishan<div class="backline"></div></a></li>
+            </ul>
+            <div class="back2menu">BACK To Menu</div>
+        </div>
+    </div>
+    
+    <header class="pro2">Sketch</header>
+    <div class="topics">
+        <div class="topic">
+            <header>Working Holiday</header>
+            <a href='Working_Holiday.html'>
+                <div class="circle" id="c1"></div>
+            </a>
+        </div>
+        <div class="topic">
+            <header>Urban</header>
+            <a href='Urban.html'>
+                <div class="circle" id="c2"></div>
+            </a>
+        </div>
+        <div class="topic">
+            <header>Sanyi</header>
+            <a href='Sanyi.html'>
+                <div class="circle" id="c3"></div>
+
+            </a>
+        </div>
+        <div class="topic">
+            <header>Nagoya</header>
+            <a href='Nagoya.html'>
+                <div class="circle" id="c4"></div>
+
+            </a>
+        </div>
+        <div class="topic">
+            <header>Countryside</header>
+            <a href='Countryside.html'>
+                <div class="circle" id="c5"></div>
+
+            </a>
+        </div>
+    </div>
+    <div class="topics">
+        <div class="topic">
+            <header>Ruin</header>
+            <a href='Ruined_Hotel.html'>
+                <div class="circle" id="c6"></div>
+
+            </a>
+        </div>
+        <div class="topic">
+            <header>Treasure Hill</header>
+            <a href='Treasure_Hill.html'>
+                <div class="circle" id="c7"></div>
+
+            </a>
+        </div>
+        <div class="topic">
+            <header>Kaohsiung</header>
+            <a href='Kaohsiung.html'>
+                <div class="circle" id="c8"></div>
+                
+            </a>
+        </div>
+        <div class="topic">
+            <header>Alishan</header>
+            <a href='Alishan.html'>
+                <div class="circle" id="c9"></div>
+            </a>
+        </div>
+    </div>
+    <svg width="100%" height="30%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="wave"><title>Wave</title><defs></defs><path id="wave2" d=""/></svg>
+    <div class="sp"></div>
+    <footer> &copy;ALL Right Reserved.</footer>
+    
+</body>
+<script>
+    $('#wave1').wavify({
+      height: 20,
+      bones: 4,
+      amplitude: 20,
+      color: '#c3e2dd',
+      speed: .13
+    });
+
+    $('#wave2').wavify({
+      height: 60,
+      bones: 5,
+      amplitude: 80,
+      color: '#6eceda',
+      speed: .12
+    });
+
+    $('#wave3').wavify({
+      height: 60,
+      bones: 5,
+      amplitude: 80,
+      color: '#6eceda',
+      speed: .12
+    });
+
+    var swiper = new Swiper('.swiper-container', {
+	  speed: 2000,
+	  spaceBetween: 0,
+	  centeredSlides: true,
+	  autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	  },
+	  pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	  },
+	  navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	  },
+	});
+</script>
+</html>
