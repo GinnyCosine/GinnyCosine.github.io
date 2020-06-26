@@ -17,8 +17,13 @@ html, body {
 
 .wave{
     position: absolute;
-    z-index: 1;
-    top: 145vh;
+    z-index: 11;
+    top: 150vh;
+}
+
+.wave1{
+    position: absolute;
+    bottom: 0;
 }
 
 footer{
@@ -52,7 +57,9 @@ footer{
 }
 
 .pro2{
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     color: rgb(98, 89, 82);
     text-align: center;
     width: 100%;
@@ -61,6 +68,12 @@ footer{
     line-height: 20vh;
     font-size: 60px;
     text-shadow: 2px 2px 5px #a7a7a7;
+}
+
+.pro2 span{
+    background-color: rgba(255, 251, 247,0.8);
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .topics{
@@ -75,9 +88,20 @@ footer{
     height: 70vh;
 }
 
+#t2{
+    background: #c3e2dd;
+    z-index: 10;
+}
+
+.space{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+
 .topic{
     width: 25%;
-    height:100%;
+    height:70%;
     -webkit-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
@@ -89,8 +113,21 @@ footer{
     font-family: 'Nanum Pen Script', cursive;
     font-size: 50px;
     height: 20%;
+    color: rgb(110, 91, 39);
+    text-shadow: 02px 0.5px 0px rgb(255, 215, 106);
+}
+
+#t2 .topic header{
     color:  #337780;
     text-shadow: 2px 1px 0px #62c3cf;
+}
+
+.bg{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 100vh;
+    background: #c3e2dd;
 }
 
 .topic .imgbox{
@@ -130,11 +167,6 @@ i{
 
 .topic header{
     height: 20vh;
-}
-
-.topic:nth-child(2n) header{
-    color: rgb(110, 91, 39);
-    text-shadow: 02px 0.5px 0px rgb(255, 215, 106);
 }
 
 .circle:hover{
@@ -247,4 +279,5 @@ i{
         line-height: 10vh;
         background: #c3e2dd;
     }
+
 }
