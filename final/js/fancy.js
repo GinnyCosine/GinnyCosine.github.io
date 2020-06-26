@@ -1,11 +1,6 @@
 // JavaScript Document
 $(document).ready(function(){
 
-    // 重新 load
-    $(window).resize(function(){
-        location.reload();
-    });
-
     // fancy group
     $(".fancybox").fancybox({
         openEffect	: 'fade',
