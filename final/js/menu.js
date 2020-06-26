@@ -5,7 +5,7 @@ $(document).ready(function(){
     console.log(pn);
 
     $(window).load(function(){
-        setTimeout(function (){$('.load').fadeOut(900)},800);
+        setTimeout(function (){$('.load').fadeOut(900)},600);
     });
 
     $(window).scroll(function(){
