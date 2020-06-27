@@ -12,14 +12,19 @@ $(document).ready(function(){
         var vw = $(window).width();
         if (vw <= 768){
             var tmp_scrollTop = $(window).scrollTop();
-            console.log(tmp_scrollTop);
-            if (tmp_scrollTop - cur_scrollTop >= 0){
-                $(".menubtn").fadeOut();
-                $(".menu_mobile").fadeOut();
+            if (tmp_scrollTop < 10){
+                $(".menubtn").show();
+                $(".menu_mobile").show();
             }
             else{
-                $(".menubtn").fadeIn();
-                $(".menu_mobile").fadeIn();
+                if (tmp_scrollTop - cur_scrollTop > 0){
+                    $(".menubtn").fadeOut();
+                    $(".menu_mobile").fadeOut();
+                }
+                else{
+                    $(".menubtn").fadeIn();
+                    $(".menu_mobile").fadeIn();
+                }
             }
             cur_scrollTop = tmp_scrollTop;
         }
