@@ -12,6 +12,7 @@ $(document).ready(function(){
         var vw = $(window).width();
         if (vw <= 768){
             var tmp_scrollTop = $(window).scrollTop();
+            console.log(tmp_scrollTop);
             if (tmp_scrollTop - cur_scrollTop >= 0){
                 $(".menubtn").fadeOut();
                 $(".menu_mobile").fadeOut();
