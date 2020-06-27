@@ -107,6 +107,7 @@ $(document).ready(function(){
             menu_open = 1;
             $('.menu').css('transition','0.6s ease-in-out');
             $(".menu_mobile").css("background","none")
+            $(".menu_mobile").css("box-shadow","none")
         }
         else{
             $(".outerline").eq(0).css("transform","none");
@@ -128,6 +129,7 @@ $(document).ready(function(){
             $('.menu').css('transition','0.6s ease-in-out');
             menu_open = 0;
             $(".menu_mobile").css("background","rgba(255, 251, 247, 0.8)")
+            $(".menu_mobile").css("box-shadow","2px 2px 5px #cccccc")
         }
     });
 
