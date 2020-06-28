@@ -76,11 +76,11 @@ section:nth-child(2n){
 }
 
 .f2{
-    fill: rgb(231, 204, 128);
+    fill: #6eceda;
 }
 
 .f3{
-    fill: rgb(255, 231, 164);
+    fill: #c3e2dd;
     fill-rule: evenodd;
     -webkit-transform: scale(0.99) translate(-5px, -5px);
     -ms-transform: scale(0.99) translate(-5px, -5px);
@@ -88,11 +88,11 @@ section:nth-child(2n){
 }
 
 section:nth-child(2n) .f2{
-    fill: #6eceda;
+    fill: rgb(231, 204, 128);
 }
 
 section:nth-child(2n) .f3{
-    fill: #c3e2dd;
+    fill: rgb(255, 231, 164);
 }
 
 .wordbox{
@@ -128,7 +128,7 @@ section:nth-child(2n) .wordbox{
     -ms-transform: translate(0, -50%);
 	-webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
-    background: #ecde9e;
+    background: #c3e2dd;
     border-radius: 14px;
     width: fit-content;
     max-width: 70%;
@@ -137,7 +137,7 @@ section:nth-child(2n) .wordbox{
 }
 
 .wordbox .title span:hover{
-    background: rgb(160, 199, 166);
+    background: rgb(162, 221, 194);
     transition: 0.8s ease;
 }
 
@@ -147,13 +147,13 @@ section:nth-child(2n) .wordbox .title{
 }
 
 section:nth-child(2n) .wordbox .title span{
-    background: #c3e2dd;
     right: 0;
+    background: #ecde9e;
 }
 
 section:nth-child(2n) .wordbox .title span:hover{
-    background: rgb(222, 235, 151);
     transition: 0.8s ease;
+    background: rgb(255, 218, 106);
 }
 
 
@@ -182,12 +182,12 @@ section:nth-child(2n) .wordbox .title span:hover{
     -ms-transform: translate(0, -50%);
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
-    color: rgb(95, 81, 62);
+    color: rgb(70, 116, 116);
 }
 
 .wordbox .description p:hover{
+    color: #5199ad;
     transition: 0.8s ease;
-    color: rgb(155, 149, 103);
 }
 
 section:nth-child(2n) .wordbox .description{
@@ -197,13 +197,13 @@ section:nth-child(2n) .wordbox .description{
 }
 
 section:nth-child(2n) .wordbox .description p{
-    color: rgb(70, 116, 116);
+    color: rgb(95, 81, 62);
     right: auto;
     left: 0;
 }
 
 section:nth-child(2n) .wordbox .description p:hover{
-    color: #5199ad;
+    color: rgb(155, 149, 103);
     transition: 0.8s ease;
 }
 
@@ -237,7 +237,7 @@ section:nth-child(2n) .back{
     right: 2%;
     top: 70%;
     border-radius: 50%;
-    background: #c9c4ba;
+    background: #80c1d3;
     z-index: -1;
 }
 
@@ -248,20 +248,20 @@ section:nth-child(2n) .back{
     top: 70%;
     right: -8%;
     border-radius: 50%;
-    background: #ffd093;
+    background: #98b8b2;
     z-index: -1;
 }
 
 section:nth-child(2n) .back2{
     left: 7%;
+    background: #c9c4ba;
     right: auto;
-    background: #80c1d3;
 }
 
 section:nth-child(2n) .back3{
     left: -3%;
     right: auto;
-    background: #98b8b2;
+    background: #ffd093;
 }
 
 .eng{

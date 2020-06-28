@@ -48,6 +48,27 @@ p{
     font-size: 16px;
 }
 
+.description p::selection{
+    background: rgb(168, 154, 143);
+    color: #fff;
+}
+
+.description p::-moz-selection{
+    background: rgb(168, 154, 143);
+    color: #fff;
+}
+
+.description br::selection{
+    background: rgb(168, 154, 143);
+    color: #fff;
+}
+
+.description br::-moz-selection{
+    background: rgb(168, 154, 143);
+    color: #fff;
+}
+
+
 .description img{
     position: relative;
     height: 100px;
@@ -64,6 +85,79 @@ p{
     font-size: 20px;
     display: inline-block;
     font-family: 'Handlee', cursive;
+    text-shadow: 1px 0.5px 0px rgb(94, 185, 147);
+}
+
+.description span::selection{
+    color: #fff;
+    background: rgb(168, 154, 143);
+    text-shadow: none;
+}
+
+.description span::-moz-selection{
+    color: #fff;
+    background: rgb(168, 154, 143);
+    text-shadow: none;
+}
+
+.description img::selection{
+    color: #fff;
+    background: rgb(168, 154, 143);
+    text-shadow: none;
+}
+
+.description img::-moz-selection{
+    color: #fff;
+    background: rgb(168, 154, 143);
+    text-shadow: none;
+}
+
+img::selection{
+    color: #fff;
+    background: rgb(219, 211, 205);
+    text-shadow: none;
+}
+
+img::-moz-selection{
+    color: #fff;
+    background: rgb(219, 211, 205);
+    text-shadow: none;
+}
+
+.description::selection{
+    color: #fff;
+    background: rgb(168, 154, 143);
+    text-shadow: none;
+}
+
+.description::-moz-selection{
+    color: #fff;
+    background: rgb(168, 154, 143);
+    text-shadow: none;
+}
+
+.description .title::selection{
+    color: #fff;
+    background: rgb(168, 154, 143);
+    text-shadow: none;
+}
+
+.description .title::-moz-selection{
+    color: #fff;
+    background: rgb(168, 154, 143);
+    text-shadow: none;
+}
+
+.description header::selection{
+    color: #fff;
+    background: rgb(168, 154, 143);
+    text-shadow: none;
+}
+
+.description header::-moz-selection{
+    color: #fff;
+    background: rgb(168, 154, 143);
+    text-shadow: none;
 }
 
 .title{
