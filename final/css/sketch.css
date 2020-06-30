@@ -327,8 +327,7 @@ i{
     footer{
         position: relative;
         top: auto;
-        height: 10vh;
-        line-height: 10vh;
+        height: fit-content;
         background: #d5f1ed;
     }
 

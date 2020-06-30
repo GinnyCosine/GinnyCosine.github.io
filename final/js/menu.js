@@ -79,6 +79,9 @@ $(document).ready(function(){
     });
 
     $(".sketch_b").click(function(){
+        if (vw > 768)
+            $(".submenu").toggle(500);
+        else
         $(".submenu").fadeIn();
         if (vw <= 768)
             $(".back2menu").fadeIn();
