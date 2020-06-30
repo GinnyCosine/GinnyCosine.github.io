@@ -49,22 +49,22 @@ p{
 }
 
 .description p::selection{
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     color: #fff;
 }
 
 .description p::-moz-selection{
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     color: #fff;
 }
 
 .description br::selection{
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     color: #fff;
 }
 
 .description br::-moz-selection{
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     color: #fff;
 }
 
@@ -90,25 +90,25 @@ p{
 
 .description span::selection{
     color: #fff;
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     text-shadow: none;
 }
 
 .description span::-moz-selection{
     color: #fff;
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     text-shadow: none;
 }
 
 .description img::selection{
     color: #fff;
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     text-shadow: none;
 }
 
 .description img::-moz-selection{
     color: #fff;
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     text-shadow: none;
 }
 
@@ -126,37 +126,37 @@ img::-moz-selection{
 
 .description::selection{
     color: #fff;
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     text-shadow: none;
 }
 
 .description::-moz-selection{
     color: #fff;
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     text-shadow: none;
 }
 
 .description .title::selection{
     color: #fff;
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     text-shadow: none;
 }
 
 .description .title::-moz-selection{
     color: #fff;
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     text-shadow: none;
 }
 
 .description header::selection{
     color: #fff;
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     text-shadow: none;
 }
 
 .description header::-moz-selection{
     color: #fff;
-    background: rgb(168, 154, 143);
+    background: rgb(145, 132, 123);
     text-shadow: none;
 }
 

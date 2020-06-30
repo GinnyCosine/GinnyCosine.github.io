@@ -270,6 +270,54 @@ section:nth-child(2n) .back3{
     padding: 0 6px;
 }
 
+header::selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
+header::-moz-selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
+span::selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
+span::-moz-selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
+p::selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
+p::-moz-selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
+br::selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
+br::-moz-selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
 @media only screen and (max-width: 1262px) and (min-width: 768px){
 
     section{

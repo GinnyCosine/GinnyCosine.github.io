@@ -302,6 +302,30 @@
     cursor: pointer;
 }
 
+li::selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
+li::-moz-selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
+a::selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
+a::-moz-selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
 @media only screen and (max-width: 1262px) and (min-width: 768px){
     .menubtn{
         left : 75px;

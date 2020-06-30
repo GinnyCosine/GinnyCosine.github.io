@@ -76,6 +76,18 @@ footer{
     border-radius: 43px;
 }
 
+.pro2 span::selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
+.pro2 span::-moz-selection{
+    color: #fff;
+    background: rgb(145, 132, 123);
+    text-shadow: none;
+}
+
 .topics{
     color: rgb(98, 89, 82);
     position: relative;
@@ -117,9 +129,33 @@ footer{
     text-shadow: 02px 0.5px 0px rgb(255, 215, 106);
 }
 
+.topic header::selection{
+    background: rgb(110, 91, 39);
+    color: rgb(255, 215, 106);
+    text-shadow: none;
+}
+
+.topic header::-moz-selection{
+    background: rgb(110, 91, 39);
+    color: rgb(255, 215, 106);
+    text-shadow: none;
+}
+
 #t2 .topic header{
     color:  #337780;
     text-shadow: 2px 1px 0px #62c3cf;
+}
+
+#t2 .topic header::selection{
+    background: #337780;
+    color: #d5f1ed;
+    text-shadow: none;
+}
+
+#t2 .topic header::-moz-selection{
+    background: #337780;
+    color: #d5f1ed;
+    text-shadow: none;
 }
 
 .bg{
