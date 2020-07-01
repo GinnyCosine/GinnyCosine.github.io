@@ -31,7 +31,7 @@ footer{
     top: 170vh;
     width: 100%;
     text-align: center;
-    z-index: 100000;
+    z-index: 3000;
     font-family: 'Nanum Pen Script', cursive;
     font-size: 25px;
 }
