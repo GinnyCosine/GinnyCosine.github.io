@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@400;500&display=swap');
+
+body{
+    font-family: 'Noto Serif TC', serif;
+    color: rgb(105, 93, 80);
+}
+
+header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 6px 0;
+}
+
+header span{
+    padding: 2px 15px;
+    border-radius: 15px;
+    background: #ffe7a4;
+}
+
+article{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 50%;
+    top: 10px;
+    -webkit-transform: scale(0.99) translate(-50%, 0);
+    -ms-transform: scale(0.99) translate(-50%, 0);
+    transform: scale(0.99) translate(-50%, 0);
+}
+
+
+section{
+    position: relative;
+    margin: auto;
+    font-size: 20px;
+    width: 100%;
+    height: fit-content;
+    font-weight: 400;
+    color: #22535a;
+}
+
+
+footer{
+    position: relative;
+    text-align: center;
+    padding: 4px 0;
+    color: rgb(204, 109, 109);
+}
+
+.mark{
+    background: #c3e2dd;
+    padding: 0 2px;
+}
+
+.remark{
+    font-size: 16px;
+    color: black;
+}
+
+ol li::marker{
+    color: #6eceda;
+}

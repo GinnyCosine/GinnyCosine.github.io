@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: rgb(105, 93, 80);
+}
+
+header{
+    text-align: center;
+    font-size: 75px;
+    font-weight: 500;
+    font-family: 'Nanum Brush Script', cursive;
+    padding: 10px 0;
+}
+
+section{
+    position: relative;
+    margin: auto;
+    width: 70%;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    line-height: 80px;
+    padding: 10px;
+}
+
+article{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    line-height: 80px;
+    background: #22535a;
+    padding: 0 20px 0 0;
+}
+
+
+article:nth-child(2n){
+    text-align: right;
+    background: #5ebdcc;
+}
+
+#f{
+    background: #489eac;
+}
+
+a, nav{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav:hover{
+    background: #ffd374 !important;
+    color: #575249;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}

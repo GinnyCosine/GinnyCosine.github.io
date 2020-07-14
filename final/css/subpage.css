@@ -19,7 +19,7 @@ header{
     text-align: center;
     height: 10%;
     color: rgb(105, 93, 80);
-    text-shadow: 2px 2px 0px rgb(255, 215, 106);
+    text-shadow: 2px 2px 0px #ffd76a;
 }
 
 header span{
