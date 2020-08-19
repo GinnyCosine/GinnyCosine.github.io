@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /final/js/
+Disallow: /midterm/js/
+Disallow: /multi-media/js/
+Disallow: /final/css/
+Disallow: /midterm/css/
+Disallow: /multi-media/css/
+Disallow: /css/
+Sitemap: https://ginnycosine.github.io/sitemap.xml
