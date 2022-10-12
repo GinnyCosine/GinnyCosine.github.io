@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <title>Milestone 1</title>
 <link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </head>
  
 <body>
@@ -12,17 +14,21 @@
 </header>
 <nav>
     <ul>
-    <li><a href="index.html">確診者染疫前後的心理健康</a></li>
-    <li><a href="index2.html">缺糧危機</a></li>
-    <li><a href="index3.html">減少前線服務人員情緒勞動</a></li>
+    <li><a href="index.html">Milestone 1</a></li>
+    <li><a href="index2.html">Milestone 2</a></li>
+    <li><a href="#">Milestone 3</a></li>
     </ul>
 </nav>
 
 
 <!--section-->
-
 <section>
-    <article>
+    <article id="m1-menu">
+        <div class="m1-btn" id="m1-1-btn">確診者染疫前後的心理健康</div>
+        <div class="m1-btn" id="m1-2-btn">缺糧危機</div>
+        <div class="m1-btn" id="m1-3-btn">減少前線人員情緒勞動</div>
+    </article>
+    <article id="m1-1">
         <h1>
             確診者染疫前後的心理健康            
             <div class="sdg">SDG 3</div>
@@ -63,7 +69,104 @@
             </div>
         </div>
     </article>
-
+    <article id="m1-2">
+        <h1>
+            缺糧危機            
+            <div class="sdg">SDG 2</div>
+        </h1>
+        <div class="content">
+            <div class="block">
+                <small>What is the problem?</small>
+                <p>
+                    2019年爆發的新冠肺炎疫情影響世界的食品供應鏈至今，加上氣候變遷、能源危機和戰爭等問題，使得全球於2022年陷入相較於以往更為嚴重的缺糧危機。
+                    <br/>
+                    聯合國指出，今年度爆發的俄烏戰爭讓原本已日益嚴重的缺糧問題更為加劇，使得全球的糧食價格居高不下，而在最壞情況下，全球糧食價格將在2027年前再漲8.5%。而這樣的降格上漲對於亞洲、非洲和拉丁美洲的部分區域影響嚴重，而全球重度飢餓人口也從2019年的1.35憶人，增加到3.5億人左右，影響甚大。
+                </p>
+            </div>
+            <div class="block">
+                <small>Who is the target population?</small>
+                <ol>
+                    <li>期望提高自身基金會之能見度者</li>
+                    <li>有意捐糧但不知該選擇哪個基金會者</li>
+                </ol>
+            </div>
+            <div class="block">
+                <small>Why is the problem important?</small>
+                <p>
+                    糧食危機所帶來的問題包括營養不良、引發飢荒、威脅到社會的穩定以及因為更高的進口糧食支出而為低度開發國家帶來更沈重的財政負擔等問題。以上種種可能造成人們偷竊、掠奪糧食，甚至爆發嚴重國與國之間的衝突。
+                    <br/>
+	                而以捐贈者的角度來說，目前提供捐贈服務的基金會相當多元，若是沒有固定捐贈的基金會，在選擇捐贈對象時常常眼花撩亂，直接上網搜尋也常常是看到有購買廣告宣傳自家基金會的網頁。而後引發的受騙上當、不知該從何選起等問題可能降低捐贈者的捐贈意願。
+                </p>
+            </div>
+            <div class="block">
+                <small>Who are the stakeholders?</small>
+                <ol>
+                    <li>主要提供糧食捐贈的基金會</li>
+                    <li>有意捐糧者</li>
+                    <li>被捐贈者（可以是人或是動物）</li>
+                </ol>
+            </div>
+            <div class="block">
+                <small>初步發想</small>
+                <p>
+                    期望可以提供一個基金會與捐贈者的媒合平台，透過已經過篩選好合法且正當基金會的平台，讓使用者得以有效率地選擇自己認為合適的基金會進行捐贈。
+                </p>
+            </div>
+        </div>
+    </article>
+    <article id="m1-3">
+        <h1>
+            如何減少前線人員因疫情影響的情緒壓力問題
+            <div class="sdg">SDG 8</div>
+        </h1>
+        <div class="content">
+            <div class="block">
+                <small>What is the problem?</small>
+                <p>
+                    前線人員如餐飲服務業、業務專員等，在提供服務時常需要面露微笑以主動表示善意，且需管理自身情緒並演繹正向的態度，來滿足消費者的需求；然而由於疫情的關係，長期配戴口罩已成為我們的日常生活，前線服務人員必須改以其他方式來表達親切和友好之意，例如透過肢體動作或者愉悅的音調來彌補微笑所帶來的功效，但也正因如此而造成前線人員的情緒負擔和壓力增加。
+                </p>
+            </div>
+            <div class="block">
+                <small>Who is the target population?</small>
+                <p>
+                    會與顧客有較多接觸的前線服務人員
+                </p>
+            </div>
+            <div class="block">
+                <small>Why is the problem important?</small>
+                <h3>疫情下影響服務業就業壓力</h3>
+                <ul>
+                    <li>
+                        受損業別：國內兩波疫情降低民眾外出消費及非民生必需品購物需求，致百貨公司、布疋及服飾品業、家用器具及用品業、其他綜合商品零售業等受衝擊最大
+                    </li>
+                    <li>
+                        實施無薪假家數最多的為支援服務業（旅行社），有1,472家、9,123人；其次為批發及零售業，有1,311人；住宿及餐飲業者為第三，有243家、2,610人；運輸及倉儲業也有115家，1,295人。
+                    </li>
+                </ul>
+                <h3>影響服務業者的情緒壓力問題</h3>
+                <p>
+                    <span class="mark">情緒勞動：需要提供更多的微笑或其他方式</span>
+                    <ul>
+                        <li>
+                            疫情下配戴口罩，會弱化人們辨識臉部表情及溝通能力。也會影響到需要建立緊密關係的品牌，難以與顧客產生同理心。容易降低顧客滿意度，影響消費量。
+                        </li>
+                        <li>
+                            此外，服務人員的情緒勞動增加，卻沒有得到相對應的報酬或薪水，容易使員工對受雇的公司失去信心，進而選擇離職。
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="block">
+                <small>Who are the stakeholders?</small>
+                <ol>
+                    <li>前線服務人員</li>
+                    <li>商家</li>
+                    <li>消費者</li>
+                    <li>心理專家</li>
+                </ol>
+            </div>
+        </div>
+    </article>
 </section>
 <footer>
     Group 6
